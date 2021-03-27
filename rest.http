@@ -1,0 +1,38 @@
+###create a todo
+POST http://localhost:5000/todo
+Content-Type: application/json
+
+{
+    "title": "Create and endpoint",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+}
+
+### Get todo 
+GET http://localhost:5000/todo
+
+
+### Get todo by Id
+GET http://localhost:5000/todo/605f6b56591f2811887fca3b
+
+
+### Update todo by Id
+PATCH http://localhost:5000/todo/605f6d6ef221ec1880d557f8
+Content-Type: application/json
+
+{
+    "title": "Creating the endpoint data",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+}
+
+
+
+### Delete todo by Id
+DELETE http://localhost:5000/todo/605f6b56591f2811887fca3b
+
+
+### Get todo by Id
+GET http://localhost:5000/abx
+
+
+###
+GET http://localhost:5000/test?title=Praise&description=my
