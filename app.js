@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose')
 const app = express();
 
-const port = process.env.PORT || 5000
+
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
@@ -18,10 +18,6 @@ mongoose
 		console.log('Mongodb connected');
 	});
 
-app.all('/test', (req, body) => {
-	console.log(req.query)
-	res.send(req.query);
-})
 
 const TodoRoute = require('./Routes/Todo.route');
 app.use('/todo', TodoRoute);
