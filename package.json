@@ -4,7 +4,7 @@
   "description": "Rest Api for Todo List",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "api",
